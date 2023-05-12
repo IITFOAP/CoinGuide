@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		2C2869F52A0E2DB400CE723F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2869F42A0E2DB400CE723F /* AppDelegate.swift */; };
 		2C2869F72A0E2DB400CE723F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2869F62A0E2DB400CE723F /* SceneDelegate.swift */; };
-		2C2869F92A0E2DB400CE723F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2869F82A0E2DB400CE723F /* ViewController.swift */; };
 		2C2869FC2A0E2DB400CE723F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2869FA2A0E2DB400CE723F /* Main.storyboard */; };
 		2C2869FE2A0E2DB500CE723F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2869FD2A0E2DB500CE723F /* Assets.xcassets */; };
 		2C286A012A0E2DB500CE723F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2869FF2A0E2DB500CE723F /* LaunchScreen.storyboard */; };
+		2C286A0F2A0E3D2300CE723F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C286A0E2A0E3D2300CE723F /* NetworkManager.swift */; };
+		2C286A122A0E3DAD00CE723F /* CoinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C286A112A0E3DAD00CE723F /* CoinListViewController.swift */; };
+		2C286A142A0E42D700CE723F /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C286A132A0E42D700CE723F /* Coin.swift */; };
+		2C286A172A0E59E800CE723F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2C286A162A0E59E800CE723F /* Alamofire */; };
+		2C286A192A0E5C6D00CE723F /* CoinViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C286A182A0E5C6D00CE723F /* CoinViewCell.swift */; };
+		2C286A1B2A0E732B00CE723F /* CoinInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C286A1A2A0E732B00CE723F /* CoinInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C2869F12A0E2DB400CE723F /* CoinGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2869F42A0E2DB400CE723F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C2869F62A0E2DB400CE723F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C2869F82A0E2DB400CE723F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C2869FB2A0E2DB400CE723F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C2869FD2A0E2DB500CE723F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C286A002A0E2DB500CE723F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C286A022A0E2DB500CE723F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C286A0E2A0E3D2300CE723F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2C286A112A0E3DAD00CE723F /* CoinListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListViewController.swift; sourceTree = "<group>"; };
+		2C286A132A0E42D700CE723F /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		2C286A182A0E5C6D00CE723F /* CoinViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewCell.swift; sourceTree = "<group>"; };
+		2C286A1A2A0E732B00CE723F /* CoinInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C286A172A0E59E800CE723F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,75 @@
 		2C2869F32A0E2DB400CE723F /* CoinGuide */ = {
 			isa = PBXGroup;
 			children = (
-				2C2869F42A0E2DB400CE723F /* AppDelegate.swift */,
-				2C2869F62A0E2DB400CE723F /* SceneDelegate.swift */,
-				2C2869F82A0E2DB400CE723F /* ViewController.swift */,
-				2C2869FA2A0E2DB400CE723F /* Main.storyboard */,
-				2C2869FD2A0E2DB500CE723F /* Assets.xcassets */,
-				2C2869FF2A0E2DB500CE723F /* LaunchScreen.storyboard */,
-				2C286A022A0E2DB500CE723F /* Info.plist */,
+				2C286A082A0E3C2800CE723F /* ViewControllers */,
+				2C286A092A0E3C8800CE723F /* Views */,
+				2C286A0B2A0E3CAB00CE723F /* Storyboards */,
+				2C286A0D2A0E3CE900CE723F /* Models */,
+				2C286A102A0E3D2C00CE723F /* Services */,
+				2C286A0A2A0E3C9600CE723F /* App */,
+				2C286A0C2A0E3CB100CE723F /* Resources */,
 			);
 			path = CoinGuide;
+			sourceTree = "<group>";
+		};
+		2C286A082A0E3C2800CE723F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C286A112A0E3DAD00CE723F /* CoinListViewController.swift */,
+				2C286A1A2A0E732B00CE723F /* CoinInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2C286A092A0E3C8800CE723F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C286A182A0E5C6D00CE723F /* CoinViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C286A0A2A0E3C9600CE723F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2C2869F42A0E2DB400CE723F /* AppDelegate.swift */,
+				2C2869F62A0E2DB400CE723F /* SceneDelegate.swift */,
+				2C286A022A0E2DB500CE723F /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2C286A0B2A0E3CAB00CE723F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2C2869FA2A0E2DB400CE723F /* Main.storyboard */,
+				2C2869FF2A0E2DB500CE723F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2C286A0C2A0E3CB100CE723F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C2869FD2A0E2DB500CE723F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C286A0D2A0E3CE900CE723F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C286A132A0E42D700CE723F /* Coin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C286A102A0E3D2C00CE723F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C286A0E2A0E3D2300CE723F /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +153,9 @@
 			dependencies = (
 			);
 			name = CoinGuide;
+			packageProductDependencies = (
+				2C286A162A0E59E800CE723F /* Alamofire */,
+			);
 			productName = CoinGuide;
 			productReference = 2C2869F12A0E2DB400CE723F /* CoinGuide.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +184,9 @@
 				Base,
 			);
 			mainGroup = 2C2869E82A0E2DB400CE723F;
+			packageReferences = (
+				2C286A152A0E59E800CE723F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 2C2869F22A0E2DB400CE723F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2869F92A0E2DB400CE723F /* ViewController.swift in Sources */,
+				2C286A0F2A0E3D2300CE723F /* NetworkManager.swift in Sources */,
+				2C286A192A0E5C6D00CE723F /* CoinViewCell.swift in Sources */,
 				2C2869F52A0E2DB400CE723F /* AppDelegate.swift in Sources */,
 				2C2869F72A0E2DB400CE723F /* SceneDelegate.swift in Sources */,
+				2C286A142A0E42D700CE723F /* Coin.swift in Sources */,
+				2C286A122A0E3DAD00CE723F /* CoinListViewController.swift in Sources */,
+				2C286A1B2A0E732B00CE723F /* CoinInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,22 +369,25 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 668CVSWCB8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoinGuide/Info.plist;
+				INFOPLIST_FILE = CoinGuide/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = CoinGuide.ndlap.CoinGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,22 +400,25 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 668CVSWCB8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoinGuide/Info.plist;
+				INFOPLIST_FILE = CoinGuide/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = CoinGuide.ndlap.CoinGuide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C286A152A0E59E800CE723F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C286A162A0E59E800CE723F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C286A152A0E59E800CE723F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C2869E92A0E2DB400CE723F /* Project object */;
 }
