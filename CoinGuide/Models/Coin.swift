@@ -9,13 +9,13 @@ import Foundation
 
 
 struct Coin: Decodable {
-    let name: String // имя
-    let image: String // фото
-    let currentPrice: Double // текущая цена
-    let marketСap: Double // копитализация
-    let high: Double // максимальная цена
-    let low: Double // минимальная цена
-    let lastUpdated: String // последнее обновление
+    let name: String
+    let image: String
+    let currentPrice: Double
+    let marketСap: Double
+    let high: Double
+    let low: Double
+    let lastUpdated: String
     
     var description: String {
         """
