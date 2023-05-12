@@ -9,15 +9,17 @@ import UIKit
 
 
 final class CoinListViewController: UITableViewController {
+    // MARK: - Private Properties
     private var coins: [Coin] = []
     private let networkMahager = NetworkManager.shared
     
-    // MARK: - Table view data source
+    // MARK: - View Life Sycle
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchCoin()
     }
     
+    // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         coins.count
     }
@@ -37,7 +39,7 @@ final class CoinListViewController: UITableViewController {
             coinInfoVC.coin = coins[indexPatch.row]
         }
     }
-    
+    // MARK: - Private Methods
     private func fetchCoin() {
         networkMahager.fetchCoin(from: Link.coinsURL.url) { [weak self] result in
             switch result {

@@ -22,11 +22,12 @@ struct Coin: Decodable {
         Name: \(name)
         Price: \(currentPrice)
         Capitalization: \(marketСap)
-        Maximum price per day: \(high)
-        Minimum price per day: \(low)
+        Max day: \(high)
+        Min day: \(low)
         Last update: \(lastUpdated)
         """
     }
+    
     
     init(name: String, image: String, currentPrice: Double, marketСap: Double, high: Double, low: Double, lastUpdated: String) {
         self.name = name
@@ -52,4 +53,6 @@ struct Coin: Decodable {
         guard let coinsData = meaning as? [[String: Any]] else { return [] }
         return coinsData.map { Coin(from: $0) }
     }
+    
+    
 }

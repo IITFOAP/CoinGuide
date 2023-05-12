@@ -8,14 +8,18 @@
 import UIKit
 
 final class CoinInfoViewController: UIViewController {
-    
+    // MARK: - IB Outlet
+
     @IBOutlet var coinImageView: UIImageView!
     @IBOutlet var infoLabel: UILabel!
     
+    // MARK: - Public Properties
     var coin: Coin!
     
+    // MARK: - Private Properties
     private let networkManager = NetworkManager.shared
     
+    // MARK: - View Life Sycle
     override func viewDidLoad() {
         super.viewDidLoad()
         infoLabel.text = coin.description
@@ -28,5 +32,10 @@ final class CoinInfoViewController: UIViewController {
                 print(error)
             }
         }
+    }
+    
+    
+    @IBAction func closesTheScreen() {
+        dismiss(animated: true)
     }
 }

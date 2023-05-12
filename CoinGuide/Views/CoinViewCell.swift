@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CoinViewCell: UITableViewCell {
+final class CoinViewCell: UITableViewCell {
     @IBOutlet var photoView: UIImageView!
     
     @IBOutlet var nameLabel: UILabel!
